@@ -1,0 +1,22 @@
+<h1 style="text-align:left">blogpost</h1>
+
+
+<div class="row">
+<% @behats.each do |behat| %>
+  
+    <h4 style="text-align:right"><%= behat.category %></h2>
+    <h3><%= link_to  behat.title , behat %></h3>
+    <p><%= behat.content %></p>
+    <p><%= behat.author %></p>
+    <div class ="links">
+        <%= link_to 'Show', behat %>
+        <%= link_to 'Edit', edit_behat_path(behat) %>
+        <%= link_to 'Destroy', behat, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+  </tr>
+<% end %>
+</div>
+
+<br />
+<%= link_to 'New Behat', new_behat_path %>
+
