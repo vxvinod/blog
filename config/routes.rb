@@ -1,19 +1,15 @@
 Blog::Application.routes.draw do
-  get "opensrc/home"
+  resources :behats
 
-  get "opensrc/about"
-
-  get "opensrc/content"
-
-  get "opensrc/contact"
+  map.root :controller => "opensrc"
+  root to: 'opensrc#home'
 
   
   match '/contact',to: 'opensrc#contact'
   match '/aboutus',to: 'opensrc#about'
 
 
-  resources :behats
-  root to: 'opensrc#home'
+  
   
 
   # The priority is based upon order of creation:
