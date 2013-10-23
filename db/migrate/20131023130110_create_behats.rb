@@ -9,5 +9,6 @@ class CreateBehats < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :behats,:description
   end
 end

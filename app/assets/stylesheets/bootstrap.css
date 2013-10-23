@@ -266,6 +266,7 @@ a:focus {
 .row {
   margin-left: -20px;
   *zoom: 1;
+  word-wrap: break-word;
 }
 
 .row:before,

@@ -1,6 +1,20 @@
 Blog::Application.routes.draw do
-  resources :behats
+  get "opensrc/home"
 
+  get "opensrc/about"
+
+  get "opensrc/content"
+
+  get "opensrc/contact"
+
+  
+  match '/contact',to: 'opensrc#contact'
+  match '/aboutus',to: 'opensrc#about'
+
+
+  resources :behats
+  root to: 'opensrc#home'
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

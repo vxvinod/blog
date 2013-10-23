@@ -17,9 +17,9 @@
           <%= link_to "opensource blog", '#', id: "logo" %>
           <nav>
             <ul class="nav pull-right">
-              <li><%= link_to "Home",    '#' %></li>
-              <li><%= link_to "Help",    '#' %></li>
-              <li><%= link_to "Sign in", '#' %></li>
+              <li><%= link_to "Home",    root_path %></li>
+              <li><%= link_to "about us",    aboutus_path %></li>
+              <li><%= link_to "contact", contact_path %></li>
             </ul>
           </nav>
         </div>
@@ -28,5 +28,10 @@
     <div class="container">
       <%= yield %>
     </div>
+    <footer class="footer" style="text-align:center">
+  <small>
+    <a href=""><b>powered by :</b> twitter bootstrap Ruby on Rails </a>
+  </small>
+</footer>
   </body>
 </html>

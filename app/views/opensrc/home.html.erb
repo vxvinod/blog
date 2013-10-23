@@ -3,22 +3,18 @@
 
 <div class="row">
             <div class ="content">
-        <% @behats.each do |behat| %>
+        <% @behatos.each do |behat| %>
           
             <h4 style="text-align:right"><%= behat.category %></h2>
             <h3><%= link_to  behat.title , behat %></h3>
             <p><%= behat.description %></p>
             <h6 style="text-align:right"><%= behat.author %></h4>
-            <div class ="links">
-                <%= link_to 'Show', behat %>
-                <%= link_to 'Edit', edit_behat_path(behat) %>
-                <%= link_to 'Destroy', behat, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </div>
+          
   </div>
   </tr>
 <% end %>
 </div>
 
-<br />
-<%= link_to 'New Behat', new_behat_path %>
+
+
 
