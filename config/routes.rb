@@ -1,7 +1,5 @@
 Blog::Application.routes.draw do
   resources :behats
-
-  map.root :controller => "opensrc"
   root to: 'opensrc#home'
 
   
