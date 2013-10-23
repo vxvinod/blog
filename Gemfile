@@ -38,3 +38,9 @@ gem 'certified'
 
 # To use debugger
 # gem 'debugger'
+
+group :production do
+  gem 'pg', '0.12.2'
+end
+
+gem 'bcrypt-ruby','3.0.1'
