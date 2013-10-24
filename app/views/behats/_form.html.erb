@@ -24,9 +24,9 @@
     <%= f.text_area :description %>
   </div>
     
-  <div class="field">
+  <div class="field" >
     <%= f.label :content %><br />
-    <%= f.text_area :content %>
+    <%= f.text_area :content, :class => "tinymce", :rows => 40, :cols => 120 %>
   </div>
   <div class="field">
     <%= f.label :author %><br />
@@ -36,3 +36,7 @@
     <%= f.submit %>
   </div>
 <% end %>
+<%= tinymce %>
+
+
+
