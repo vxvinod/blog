@@ -10,6 +10,7 @@ gem 'sqlite3'
 end
 gem 'bootstrap-sass','2.1'
 gem 'tinymce-rails'
+gem 'simple_form'
 
 
 # Gems used only for assets and not required

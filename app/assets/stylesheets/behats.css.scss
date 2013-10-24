@@ -91,9 +91,6 @@ p {
   word-wrap: break-word;
 }
 
-.field{
-  width:150px;
-}
 
 
 /* forms */
@@ -109,4 +106,29 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+div.book-content{
+   width:100%;
+  height:100%;
+  background-color:red;
+  float:right;
+  margin-top:20px;
+  margin-left:5px;
+  border-radius:20px;
+  word-wrap:break-word;
+  overflow:auto;
+}
+
+.test{
+  background-color:white;
+}
+
+.test1{
+  width:1000px;
+  height:auto;
+}
+
+div.code{
+  backround-color:grey;
 }

@@ -2,13 +2,18 @@
 
 
 <div class="row">
-            <div class ="content">
+           
         <% @behatos.each do |behat| %>
-          
+           <div class ="content">
             <h4 style="text-align:right"><%= behat.category %></h2>
-            <h3><%= link_to  behat.title , behat %></h3>
+            <h2 style="text-align:left"><%= link_to  behat.title , behat %></h3>
             <p><%= behat.description %></p>
-            <h6 style="text-align:right"><%= behat.author %></h4>
+            <div class ="links">
+                    <%= link_to 'Read more', behat %>&nbsp;&nbsp;&nbsp;
+                    <%= link_to 'comments', "#" %>&nbsp;&nbsp;&nbsp;
+                    <%=link_to time_ago_in_words(behat.created_at)+ " ago ",behat %> 
+             </div>
+           
           
   </div>
   </tr>

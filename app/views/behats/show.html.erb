@@ -6,7 +6,7 @@
             <h4 style="text-align:right"><%= @behat.category %></h2>
             <h3 style="color: #458DC9;"><%= @behat.title %></h3>
             <p><%= @behat.description %></p><br>
-            <p><%= @behat.content %></p>
+            <p><%= @behat.content.html_safe %></p>
             <h6 style="text-align:right"><%= @behat.author %></h4>
             
   </div>
